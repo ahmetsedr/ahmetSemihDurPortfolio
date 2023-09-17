@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const educationData = [
   {
@@ -51,9 +52,11 @@ const Section = () => {
 
       <article className="container bg-black p-5 mt-5 rounded" id="contico">
         <figure className="containerHeader flex items-center">
-          <img
-            src="https://patika-prod.s3.eu-central-1.amazonaws.com/staticFiles/books-m.png"
+          <Image
+            src="/staticFiles/books-m.png"
             alt="icon"
+            width={100}
+            height={100}
             className="w-12 h-12 mr-2"
           />
           <h2 className="text-2xl font-semibold">Eğitim</h2>
@@ -68,9 +71,11 @@ const Section = () => {
 
       <article className="container bg-black p-5 mt-5 rounded" id="contico">
         <figure className="containerHeader flex items-center">
-          <img
-            src="https://patika-prod.s3.eu-central-1.amazonaws.com/staticFiles/female-technologist-v2.png"
+          <Image
+            src="/staticFiles/female-technologist-v2.png"
             alt="icon"
+            width={100}
+            height={100}
             className="w-12 h-12 mr-2"
           />
           <h2 className="text-2xl font-semibold">Projeler</h2>
