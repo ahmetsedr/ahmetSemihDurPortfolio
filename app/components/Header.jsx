@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaEnvelope, FaGithub, FaCodepen, FaLinkedin, FaYoutube, FaNetworkWired } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
+import profilePic from '../img/profilePicture.png';
 
 const Header = () => {
   // Doğum tarihinin 4 Ocak 2004 olduğunu varsayalım
@@ -14,9 +16,9 @@ const Header = () => {
   return (
     <header className="bg-black text-center p-16 text-white">
       <div className="flex justify-center">
-        <img
+        <Image
           id="avatar"
-          src="https://patika-prod.s3-eu-central-1.amazonaws.com/userFiles/ahmetse/profilePicture"
+          src={profilePic}
           alt="Ahmet Semih Dur"
           className="border-4 border-white rounded-full"
         />
@@ -25,61 +27,29 @@ const Header = () => {
       <p className="italic">{age} yaşındayım - ahmetsedur@gmail.com</p>
       <div className="flex m-3 justify-center items-center">
 
-          <Link href="mailto:ahmetsecodr@gmail.com"
-            target="_blank"
-            title="Ahmet Semih Gmail"
-            className="flex m-3 justify-center items-center hover:text-gray-500"
-          >
-            <FaEnvelope size={32} />
+        <Link href="mailto:ahmetsecodr@gmail.com" target="_blank" title="Ahmet Semih Gmail" className="flex m-3 justify-center items-center hover:text-gray-500">
+          <FaEnvelope size={32} />
         </Link>
 
-        
-          <Link href="https://www.linkedin.com/in/ahmet-semih-dur/"
-            target="_blank"
-            title="Ahmet Semih Gmail"
-            className="flex m-3 justify-center items-center hover:text-gray-500"
-          >
-            <FaLinkedin size={32} />
-          
+        <Link href="https://www.linkedin.com/in/ahmet-semih-dur/" target="_blank" title="Ahmet Semih Gmail" className="flex m-3 justify-center items-center hover:text-gray-500">
+          <FaLinkedin size={32} />
         </Link>
 
-        
-          <Link href="https://www.youtube.com/@ahmetsemihdur"
-            target="_blank"
-            title="Ahmet Semih Gmail"
-            className="flex m-3 justify-center items-center hover:text-gray-500"
-          >
-            <FaYoutube size={32} />
-          
+        <Link href="https://www.youtube.com/@ahmetsemihdur" target="_blank" title="Ahmet Semih Gmail" className="flex m-3 justify-center items-center hover:text-gray-500">
+          <FaYoutube size={32} />
         </Link>
 
-        
-          <Link href="https://ahmetsedr.github.io/ahmetsemihdur/"
-            target="_blank"
-            rel="nofollow"
-            className="flex m-3 justify-center items-center hover:text-gray-500"
-          >
-            <FaNetworkWired size={32} />
-            <p> (Eski)</p>
-          
+        <Link href="https://ahmetsedr.github.io/ahmetsemihdur/" target="_blank" className="flex m-3 justify-center items-center hover:text-gray-500">
+          <FaNetworkWired size={32} />
+          <p> (Eski)</p>
         </Link>
 
-        
-          <Link href="https://github.com/ahmetsedr"
-            target="_blank"
-            rel="nofollow"
-            className="flex m-3 justify-center items-center hover:text-gray-500"
-          >
-            <FaGithub size={32} />
+        <Link href="https://github.com/ahmetsedr" target="_blank" className="flex m-3 justify-center items-center hover:text-gray-500">
+          <FaGithub size={32} />
         </Link>
 
-        
-          <Link href="https://codepen.io/ahmetsedr"
-            target="_blank"
-            rel="nofollow"
-            className="flex m-3 justify-center items-center hover:text-gray-500"
-          >
-            <FaCodepen size={32} />
+        <Link href="https://codepen.io/ahmetsedr" target="_blank" className="flex m-3 justify-center items-center hover:text-gray-500">
+          <FaCodepen size={32} />
         </Link>
       </div>
 

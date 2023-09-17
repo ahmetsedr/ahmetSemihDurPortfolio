@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import aboutCardPic from '../img/ahmetse.png';
 
 export default function AboutCard() {
   return (
@@ -7,7 +8,7 @@ export default function AboutCard() {
     <div className="max-w-screen-xl w-11/12 md:w-3/4 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 order-2 md:order-1">
             <Image
-                src="https://media.licdn.com/dms/image/D4D03AQFY-P2KxnjdpQ/profile-displayphoto-shrink_800_800/0/1686991614285?e=2147483647&v=beta&t=aablSmv7FhsUjiCFa8DSo8mejYbb8bfpyRUxK6Uej7U"
+                src={aboutCardPic}
                 alt="Fotoğraf"
                 className="object-cover w-full h-full"
             />

@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import { FaGraduationCap, FaLaptopCode } from 'react-icons/fa';
 
 const educationData = [
   {
@@ -52,11 +52,8 @@ const Section = () => {
 
       <article className="container bg-black p-5 mt-5 rounded" id="contico">
         <figure className="containerHeader flex items-center">
-          <Image
-            src="/staticFiles/books-m.png"
-            alt="icon"
-            width={100}
-            height={100}
+          <FaGraduationCap
+            size={48} // İkona boyut verebilirsiniz
             className="w-12 h-12 mr-2"
           />
           <h2 className="text-2xl font-semibold">Eğitim</h2>
@@ -71,11 +68,8 @@ const Section = () => {
 
       <article className="container bg-black p-5 mt-5 rounded" id="contico">
         <figure className="containerHeader flex items-center">
-          <Image
-            src="/staticFiles/female-technologist-v2.png"
-            alt="icon"
-            width={100}
-            height={100}
+          <FaLaptopCode
+            size={48}
             className="w-12 h-12 mr-2"
           />
           <h2 className="text-2xl font-semibold">Projeler</h2>
