@@ -20,7 +20,7 @@ export default function AboutCard() {
             </p>
             <br />
             <Link href="/about" className='bg-white text-black border-black border-2 py-2 px-4 rounded-lg hover:bg-black hover:text-white hover:border-white transition duration-300'>
-                CV'mi Gör
+            CV&apos;mi Gör
             </Link>
         </div>
     </div>
